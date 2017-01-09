@@ -4,14 +4,24 @@
 	<meta charset="UTF-8">
 	<title>J'aime Schnaps.it</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/knacss.css" media="all">
-	<link rel="stylesheet" href="css/styles.css" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
 
-	<p onmouseleave="myStopFunction()" onmouseover="makeid()" id="foo">salut</p>
+<div style="
+	background-color:black; 
+	color : white; 
+	font-family: 'Poiret One', cursive;
+	font-size:4em;	">
+	<p 
+		onmouseleave="myStopFunction()" 
+		onmouseover="makeid()" 
+		id="foo">
+	salut
+	</p>
+</div>
 
-	<button onclick="myStopFunction()">Stop time</button>
+	<button onclick="reload()">Generate new name</button>
 
 	<script type="text/javascript">
 
@@ -26,18 +36,24 @@
 			console.log(text) ;
 			document.getElementById("foo").innerHTML= text
 
-		}, 125);
+			}, 200);
+		
 
 		function myStopFunction() {
+
+
 			clearInterval(myVar);
+			document.getElementById("foo").innerHTML= "theophile vast	"
 		}
 
-		function makeid()
-		{
-
+		function reload()
+		{	
+			
+		location.reload();
 		
 			
 		}
+	
 
 
 
