@@ -2,64 +2,116 @@
 <html class="no-js" lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>J'aime Schnaps.it</title>
+	<title>PORTFOLIO</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link href="styles.Css" rel="stylesheet">
+
 </head>
 <body>
 
-<div style="
-	background-color:black; 
-	color : white; 
-	font-family: 'Poiret One', cursive;
-	font-size:4em;	">
-	<p 
+	<nav class="navbar navbar-light bg-faded">
+		<h1  
 		onmouseleave="myStopFunction()" 
-		onmouseover="makeid()" 
-		id="foo">
-	salut
-	</p>
-</div>
+		onmouseover="" 
+		id="foo"
+		class="logo navbar-brand mb-0">Navbar</h1>
+		<span class="menu" onclick="openNav()">☰</span>
+		<div id="myNav" class="overlay">
+
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Clients</a>
+				<a href="#">Contact</a>
+			</div>
+
+		</div>
+	</nav>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<button onclick="reload()">Generate new name</button>
 
-	<script type="text/javascript">
 
-		var myVar = setInterval(function(){ 
-
-				var text = "";
-			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-			for( var i=0; i < 20; i++ )
-				text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-			console.log(text) ;
-			document.getElementById("foo").innerHTML= text
-
-			}, 200);
-		
-
-		function myStopFunction() {
-
-
-			clearInterval(myVar);
-			document.getElementById("foo").innerHTML= "theophile vast	"
-		}
-
-		function reload()
-		{	
-			
-		location.reload();
-		
-			
-		}
-	
+	<script type="text/javascript" src="scripts.js"></script>
 
 
 
-	</script>
-
-
-	
 </body>
 </html>
